@@ -65,7 +65,7 @@ Se puede dar calidad en el software que se desarrolla, mantiene o da soporte. La
 - Calidad de producto obtenido
 
 Esta misma división puede ser mas general no restringiendose solamente a la calidad de software.
-Las metas que se definan como calidad del producto impactarán en la calidad del proceso de desarrollo del mismo ya que están directamente relacionada y se podría decir que la calidad del producto es consecuencia de la calidad del proceso.
+Las metas que se definan como calidad del producto impactarán en la calidad del proceso de desarrollo del mismo ya que están directamente relacionada y se podría decir que _la calidad del producto es consecuencia de la calidad del proceso_.
 
 #### 4. ¿Cómo se diferencian los términos Norma y Estándar? Explique.
 
@@ -119,9 +119,15 @@ Se describe el modelo de calidad de producto de software en dos partes.
 
 a) Calidad interna y externa
 
-b) Calidad de uso. 
+b) Calidad de uso.
 
 Esta a su vez está especificada en 6 características para la calidad interna y externa y 4 para calidad de uso.
+
+**La ISO/IEC 9126 está dividida en 4 partes:**
+- 9126-1 Modelo de calidad
+- 9126-2 Métricas externas
+- 9126-3 Métricas internas
+- 9126-4 Métricas de calidad de uso
 
 #### 8. Enumere las características que presenta la ISO/IEC 9126-1.
 
@@ -129,7 +135,7 @@ La ISO 9126-1 clasifica la calidad de software en un conjunto estructurado de ca
 
 Las **características** y _subcaracterísticas_ son las siguientes:
 
-##### Calidad interna y externa
+##### Atributos de calidad externa e interna
 - **Funcionalidad**
     - _Adecuacuación_
     - _Exactitud_
@@ -159,7 +165,7 @@ Las **características** y _subcaracterísticas_ son las siguientes:
     - _Capacidad de reemplazamiento_
 
 
-##### Calidad en uso:
+##### Atributos de la Calidad en uso:
 - _Eficacia_
 - _Productividad_
 - _Seguridad_
@@ -171,9 +177,9 @@ Los componentes de la tabla son:
 - Metricname. (Nombre de la métrica). Interna o externa.
 - Purpose of the metric. (Propósito de la métrica). Se expresa la aplicación de la métrica.
 - Method of application. Proveé un esquema para la aplicación de la métrica.
-- Measurement, formula and data element computations: Formulas y elementos para la métrica.
-- Interpretation of measured value: Provee un rango para los valores de la métrica.
-- Measure type: Tipo de medida. Por ejemplo (Número de cambios, tiempo).
+- Measurement, formula and data element computations: Formulas y elementos para la métrica. Ej.: `X=A/B` A= Número de veces que una acción se hace correctamente. B= Cantidad de intentos.
+- Interpretation of measured value: Provee un rango para los valores de la métrica. (Ej, `0<=X<=1`)
+- Measure type: Tipo de medida. Por ejemplo (Número de cambios, tiempo, cantidad).
 - Input to measurement: De donde se obtienen los datos de la métrica.
 - ISO/IEC 12207 SLCP Reference: Identifica el ciclo de vida del software cuando es aplicable.
 - Target audience: Para quién va dirigida la métrica.
@@ -182,9 +188,39 @@ Los componentes de la tabla son:
 
 Depende de cada métrica.
 
+Primero se debe establecer la métrica, su método de aplicación, su fórmula, y luego su interpretación, en la interpretación se establecen los valores de puntuación.
+
+Ej: Para una métrica de suficiencia de pruebas:
+
+Metodo: Contar las pruebas planeadas y comparar con el número de pruebas requeridas para obtener una cobertura adecuada.
+
+Fórmula: X = A/B
+
+A = número de casos de prueba en el plan
+
+B = número de casos de prueba requeridos
+
+Interpretación: 0 <= X
+
+Entre X se mayor, mejor la suficiencia.
+
+Si X es igual a B, se obtiene la mejor puntuación para esta métrica.
+
+
 #### 11. Explique de qué forma se deben combinar los niveles de las métricas para establecer los niveles de las características y de evaluación.
 
 Se pueden combinar mediante fórmulas o tablas.
+
+Se debe ponderar cada métrica y luego combinarlas para establecer el nivel de la característica.
+
+Ej: Atractividad * 0.3 + Facilidad de uso * 0.6 + Operabilidad + 0.1
+
+Valor de la característica USABILIDAD:
+- Inaceptable:  0 < x <= 0.2
+- Aceptable: 0.2 < x <= 0.4
+- Rang Objetivo: 0.4 < x <= 0.6
+- Exc. los req: 0.6 < x <= 1
+
 
 #### 12. Explique cómo se conforma la familia ISO/IEC 25000 (SQuaRE).
 
@@ -197,7 +233,8 @@ Se conforma con una serie de estándares basados en la ISO/IEC 9126 y la ISO/IEC
 
 #### 13. ¿Qué norma de la familia ISO/IEC 25000 reemplaza a la ISO/IEC 9126-1? Explique las diferencias.
 
-La reemplaza la ISO/IEC 25010.
+La ISO/IEC 9126-1 es reemplazada por la ISO/IEC 25010.
+
 En la ISO/IEC 25010 aparecen nuevas características, `8 en total`.
 __Calidad del producto de software:__
 - Portabilidad -> 9126-1
@@ -221,7 +258,12 @@ La norma ISO/IEC 14598 está dividida en seis partes:
 - IRAM - ISO/IEC 14598-5 Proceso para evaluadores.
 - IRAM - ISO/IEC 14598-6 Documentación de los módulos de evaluación.
 
-_¿y las diferencias?_
+- ISO/IEC 2504n - División Evaluación de la calidad
+- ISO/IEC 25040 - Evaluation reference model and guide
+- ISO/IEC 25041 - Evaluation guide for developers, acquirers and independent evaluators
+- ISO/IEC 25042 - Evaluation modules.
+- ISO/IEC 25045 - Evaluation module for recoverability
+
 
 ### Parte III: Calidad de datos
 
@@ -238,6 +280,9 @@ La clasificación propuesta es considerando dos puntos de vista:
 - __Dependiente del sistema:__
     _Capacidad del sistema informático de alcanzar y preservar la calidad de los datos cuando los datos se utilizan en determinadas condiciones_
     _Este punto de vista suele ser responsabilidad de los técnicos del sistema._
+
+
+Hay caracteristicas que comparten los dos puntos de vista y serían **Inherentes y dependientes**.
 
 -------
 
@@ -308,7 +353,6 @@ __Procesos de ciclo de vida del software ISO/IEC 12207:2017__
 
 #### 22. Describa el Modelo de Capacidad de Mejora de Procesos de Software ISO/IEC 15504. ¿Qué nueva familia de normas lo reemplaza? Explique las diferencias.
 
-
 La ISO/IEC 15504 se compone en 7 partes:
 - Parte 1: Conceptos y vocabulario (normativa)
 - Parte 2: Realización de la evaluación (normativa) -> Esta
@@ -378,6 +422,52 @@ La SGC describe a la mejora contínua realizando los siguientes pasos una y otra
 - Verificar
 - Actuar
 
+_Deben ser medibles, realizables y alineados con la política._
+
+#### 28. Dados los siguientes objetivos, indicar si están bien escritos y por qué. Reescribir los que no considere correctos de modo que cumplan con las características.
+
+**a. No tener solicitudes de cambios en los requerimientos funcionales**
+- De ser realizable, no se puede asegurar que no vayan a haber solicitudes.
+- Reducir la tasa de solicitudes de cambios en los requerimientos funcionales en un n%.
+
+**b. Tener pocos errores en los requerimientos funcionales implementados**
+- No es medible.
+- Reducir en un n% los errores de requerimientos funcionales implementados.
+
+**c. Tener un desvío promedio (por tarea) entre el tiempo insumido en desarrollo y el tiempo estimado menor al 25%**
+- No es mejorable.
+- Mejorar el tiempo de desvío promedio (por tarea) entre el tiempo insumido ne el desarrollo y el tiempo estimado blabla
+
+
+#### 29. El “Mapa de Procesos” busca mantener una estructura coherente de la información documentada del sistema.
+
+**a. Indique cuáles son los tipos de procesos que debe contener y qué representan cada uno de ellos.**
+ 
+ENTRADA: Necesidades del cliente
+
+- **Procesos estratégicos:** Procesos que definen y verifican las políticas, estrategias, objetivos y metas de la organización. Ej.: Comunicación interna/externa. Planificación. Proceso de calidad total.
+- **Procesos operativos:** Procesos de producción de bienes y servicios que se entregan al cliente. -> (SATISFACCIÓN DEL CLIENTE). Ej.: Desarrollo del producto, atención al cliente.
+- **Procesos de soporte:** Procesos que realizan actividades de apoyo necesarias para el buen funcionamiento de los procesos operativos. Ej.: Control de calidad, selección de personal, compras, etc.
+
+SALIDA: Satisfacción del cliente
+
+**b. Indique qué significan los clientes en el Mapa de Procesos y qué representan.**
+
+Son quienes tienen un requerimiento a satisfacer. En el mapa de procesos aparecen en la salida.
+
+**c. Ubique en el siguiente Mapa de Procesos cada una de las regiones y presente un ejemplo:**
+
+```
+(Esto va con recuadritos y eso)
+
+                            Procesos estratégicos
+                                ↓       ↓
+Necesidades del cliente     Procesos operativos   ->     Satisfacción del cliente
+                                ↑       ↑
+                            Procesos de soporte
+```
+
+
 
 ### Parte VI: Resumen
 
@@ -385,17 +475,19 @@ La SGC describe a la mejora contínua realizando los siguientes pasos una y otra
 
 **a. Aplicar un SGC a un proceso de mi empresa de desarrollo de software.**
 
-La norma IRAM - ISO 9001 está diseñada y con los pasos necesarios para aplicar un Sistema de Gestión de Calidad (SGC)
+La norma **IRAM - ISO 9001** está diseñada y con los pasos necesarios para aplicar un Sistema de Gestión de Calidad (SGC) y aplicando las directrices de la norma **ISO 90003** para satisfacer los requisitos de un SGC dentro de un proceso de software.
 
 **b. Funcionamiento del área contable de la Facultad de Informática.**
 
-Se necesita alguna para certificar la _calidad del proceso_ contable. Normas de Calidad de proceso son las ISO/IEC 15504 y su reemplazo, la familia de ISO/IEC 33000.
+Se necesita alguna para certificar la _calidad del proceso_ contable. Normas de Calidad de proceso son las **ISO/IEC 15504** y su reemplazo, la familia de **ISO/IEC 33000**.
 
 **c. Manejo de los datos de una empresa.**
 
-ISO/IEC 25012 Data quality
+**ISO/IEC 25012** Data quality: Esta norma establece las características de Calidad de Datos que se deben tener en cuenta a la hora de evaluar las propiedades de datos determinados.
 
 **d. Desarrollar un software de reserva de aulas para la facultad.**
 
-ISO/IEC 25010. _Modelo de calidad detallado que incluye características de calidad_ __internas__ _y externas._ La evaluación de calidad internas son útiles para el proceso de desarrollo del software.
-¿? -> vo' decí? mmm
+**ISO/IEC 25010**. _Modelo de calidad detallado que incluye características de calidad_ __internas__ _y externas._ La evaluación de calidad internas son útiles para el proceso de desarrollo del software.
+
+O puede ser, la **ISO/IEC 12207** que establece un modelo de procesos para el ciclo de vida del software. ¿?
+

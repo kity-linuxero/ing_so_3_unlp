@@ -42,9 +42,9 @@ Existen cinco restricciones que operan sobre un proyecto:
 
 **2) Calidad:** Existen dos calidades a tener en cuenta en el desarrollo: Calidad del producto y calidad del proceso.
 
-**3) Costo**
+**3) Costo:** Presupuesto disponible para terminar el proyecto.
 
-**4) Tiempo**
+**4) Tiempo:** Ventana de tiempo en la cual el proyecto debe terminarse.
 
 **5) Recursos:** Son activos, tales como personas, equipos facilidades físicas, o artefactos necesarios para realizar el proyecto.
 
@@ -52,7 +52,7 @@ _Son interdependientes - Un cambio en una, implica un cambio en las demás._
 
 #### 4. ¿En qué consiste el “Triángulo de alcance”? Explique el concepto.
 
-Los proyectos son sistemas dinámicos que deben ser mantenidos en equilibrio.
+Los proyectos son sistemas dinámicos que deben ser mantenidos en equilibrio. El triángulo de alcance determina que el balance del costo, tiempo y disponibilidad de recursos, van a definir el alcance y la calidad del proyecto.
 
 ```
 Triángulo de alcance
@@ -74,7 +74,6 @@ Triángulo de alcance
 
 Son controlados por el líder del proyecto y necesitan ser identificados de manera independiente.
 
-
 #### 5. Identifique las etapas que forman parte de un proyecto y describa en pocas palabras en qué consiste cada una.
 
 1. Inicio
@@ -82,7 +81,6 @@ Son controlados por el líder del proyecto y necesitan ser identificados de mane
 3. Ejecución
 4. Seguimiento y control
 5. Cierre
-
 
 #### 6. Explique cómo se pueden clasificar los proyectos de software.
 
@@ -134,7 +132,7 @@ Falta de...
 >Se trata de las habilidades, herramientas y procesos de gestión necesarios para llevar a cabo un proyecto con éxito. _[METHOD 123]_
 
 
-Queda por hacer...
+> La administración de proyectos es una metodología usada a nivel mundial, por empresas e instituciones para alcanzar objetivos en un tiempo determinado. También significa llevar una gestión equilibrando, separando las urgencias de las tareas que realmente son importantes para el cliente. El volumen de trabajo, las variables y los requisitos cada vez más complejos, han dado lugar a que cada vez más empresas e instituciones administren su trabajo por proyectos. _[Wikipedia]_
 
 
 #### 9. Cite los desafíos de la administración de proyectos. Indique qué puede hacerse para cumplirlos.
@@ -477,7 +475,7 @@ COCOMO provee un modelo para estimar costos en base a:
 
 #### 24. Explique qué es la economía de escala. De al menos dos ejemplos.
 
-
+> Es el poder que tiene una empresa cuando alcanza un nivel óptimo de producción para ir produciendo más a menor coste, es decir, a medida que la producción en una empresa crece, sus costes por unidad producida se reducen. Cuanto más produce, menos le cuesta producir cada unidad
 
 Fórmula: `E= A*(Tamaño)^B`
 
@@ -502,7 +500,7 @@ El principal objetivo es asegurar que los beneficios:
 - Sean _identificados_
 - Estén _definidos_ claramente
 - Estén _vinculados_ a los _resultados_ estratégicos
-- Sean _específicos, medibles, realizables, realizas_ y _limitados en el tiempo_
+- Sean _específicos, medibles, realizables, realistas_ y _limitados en el tiempo_
 
 Enfoque:
 1. Desarrollo de una **estrategia de gestión de beneficios**.
@@ -632,26 +630,77 @@ b. Identificar al menos 3 tareas que sería necesario ejecutar en cada proyecto 
 c. Explicar dos situaciones que puedan hacer fracasar el proyecto.
 
 
+**Clasificación de proyectos**
 
+| Proyecto 	| Duración    	| Riesgo 	| Complejidad 	| Tecnología 	| Problemas         	|
+|----------	|-------------	|--------	|-------------	|------------	|-------------------	|
+| 1        	| < 2 meses   	| Bajo   	| Baja        	| Práctica   	| Ninguno           	|
+| 2        	| 12-18 meses 	| Medio  	| Media       	| Actual     	| Alta probabilidad 	|
 
+**Situaciones que puedan hacer fracasar el proyecto**
+- Mala estimación de costos pueden hacer fracasar a los proyectos por falta de presupuesto
+- Mala estimación en la duración de los proyectos.
+
+**Tareas que sería necesario ejecutar en cada proyecto**
+? 
 
 
 #### 32. Elegir una organización y describir a qué se dedica (cuál es su misión). Formular un objetivo estratégico para el cual se necesite la ejecución de un programa y luego:
 
-a. Identificar un programa para la implementación del objetivo estratégico que incluya al menos tres proyectos.
+**a. Identificar un programa para la implementación del objetivo estratégico que incluya al menos tres proyectos.**
 
-b. Explicar por qué los proyectos forman parte del programa.
+?
+
+**b. Explicar por qué los proyectos forman parte del programa.**
+
+?
 
 #### 33. Una importante empresa de servicios de salud, con más de 20.000 empleados, tiene como proyecto proveer a sus empleados un sistema online que los ayude a mejorar y mantener su estado de salud. Hoy en día, la empresa paga un 20% más que el promedio del mercado en servicios de salud prepaga. Se cree que, con este sistema, se mejorará la salud de sus empleados y se podrán negociar mejores precios con la prepaga, ahorrando al menos $150 al año por empleado. Se busca terminar el proyecto en 6 meses con un presupuesto de $500 000. El sistema requiere:
 
-- Permitir a los empleados registrarse a programas de recreación patrocinados por la compañía, tales como fútbol, básquet, ciclismo y otros deportes.
-- Permitir a los empleados registrarse a programas y clases para ayudarlos a controlar su peso, reducir el stress, dejar de fumar, etc.
-- Monitorear datos sobre los empleados que se involucran en esas actividades recreacionales y esos programas de salud.
-- Ofrecer incentivos a los que se inscriben en los programas y tienen un buen desenvolvimiento en ellos (dejando de fumar, ganando competencias, etc.)
+- **Permitir a los empleados registrarse a programas de recreación patrocinados por la compañía, tales como fútbol, básquet, ciclismo y otros deportes.**
+- **Permitir a los empleados registrarse a programas y clases para ayudarlos a controlar su peso, reducir el stress, dejar de fumar, etc.**
+- **Monitorear datos sobre los empleados que se involucran en esas actividades recreacionales y esos programas de salud.**
+- **Ofrecer incentivos a los que se inscriben en los programas y tienen un buen desenvolvimiento en ellos (dejando de fumar, ganando competencias, etc.)**
 
-Para este proyecto se busca formular una estrategia de gestión de los interesados con:
-a. Identificación de al menos tres grupos de interesados.
-b. Creación del mapa de partes interesadas.
-c. Creación de la matriz de impacto de las partes interesadas.
-d. Elaboración de un plan de comunicación.
-e. Definición de los canales de comunicación.
+**Para este proyecto se busca formular una estrategia de gestión de los interesados con:**
+**a. Identificación de al menos tres grupos de interesados.**
+
+- Empleados
+- Empresa de salud prepaga
+- Gerencia de la empresa
+
+**b. Creación del mapa de partes interesadas.**
+
+| Stakeholders/Area de interés 	| Mejora de salud 	| Financiera 	| Incentivos 	| Reducir costos de cobertura 	|
+|------------------------------	|-----------------	|------------	|------------	|-----------------------------	|
+| Empleados                    	| X               	|            	| X          	|                             	|
+| Empresa Prepaga              	|                 	|            	|            	| X                           	|
+| Gerencia de la empresa       	| X*              	| X          	|            	|                             	|
+
+*La gerencia de la empresa podrá verse beneficiada con la mejora de salud de sus empleados.
+
+**c. Creación de la matriz de impacto de las partes interesadas.**
+
+Eje Y: Posible Impacto del PGM en los stakeholders
+
+|           	| **Alto**          	| **Medio**        	| **Bajo**             	|
+|-----------	|-------------------	|------------------	|----------------------	|
+| **Alto**  	| Empleados 	      | Gerencia  	      |                      	|
+| **Medio** 	|                 	|  	               |                    	|
+| **Bajo**  	|                   	|      Prepaga      	|                     	|
+
+Eje X: Importancia de los stakeholders en el programa
+
+**d. Elaboración de un plan de comunicación.**
+
+Una vez planificado y aprobado por la gerencia se procederá a realizar la comunicación con los interesados.
+1. Enviar mail a todos los empleados anunciando el proyecto
+2. Realizar el diseño de publicidad
+3. Contactarse con una imprenta y con el sector de prensa de la empresa
+
+**e. Definición de los canales de comunicación.**
+
+- Correo electrónico institucional
+- Carteleras oficiales de la empresa
+- Redes sociales
+- Charlas informativas

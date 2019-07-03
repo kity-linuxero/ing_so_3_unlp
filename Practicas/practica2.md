@@ -13,19 +13,24 @@ Objetivos de una auditoría:
 
 _Para poder cumplir con los objetivos, se debe recolectar evidencia._
 
-Las principales razones para controlar y auditar sistemas (son 7):
+##### Las principales razones para controlar y auditar sistemas (son 7):
 - **Costos por pérdidas de datos**: pérdida de cuentas corrientes, pérdida de los datos de los alumnos.
 - **Costos por toma de decisiones incorrectas**:cálculo de amortización erróneo en un bien de poco valor
 - **Costos por abusos computacionales** (hacking, virus, abuso de privilegio)
-- **Costos por errores de computación**: posible pérdida de vida humana, daño al medio ambiente
+- **Costos por errores de computación**: Procesos automatizados que producen pérdida de dinero o incluso pérdida de vida humanas, daño al medio ambiente.
 - **Valor de hardware y software personal** (Determinar el impacto que alguno de estos valores críticos pueda fallar)
 - **Evolución controlada de TI**: La confiabilidad de los sistemas computarizados complejos no está garantizada.
-- **Mantenimiento de privacidad**: Hoy en día se maneja gran información de los individuos: trabajo, residencia, tarjetas de crédito... Se podría utilizar datos de la genética humana de una persona para usarla en su contra.
+- **Mantenimiento de privacidad**: Hoy en día se maneja gran información de los individuos: trabajo, residencia, tarjetas de crédito... Se podría utilizar datos de la genética humana de una persona para usarla en su contra. Prevenir la exposición de datos privados de los usuarios de un sistema.
 
 #### 2. Para cada uno de los siguientes interesados, presente un ejemplo de cómo un mal procesamiento de información realizado por un sistema informático, puede conducir a una toma de decisiones incorrecta:
-- Gerente de una empresa vinculada a la industria automotriz
-- Funcionario de ARBA
-- Consejo Directivo de una facultad
+- **Gerente de una empresa vinculada a la industria automotriz**
+Un mal cálculo podría ocacionar información errónea sobre el stock disponible teniendo inconvenientes en el momento de entregar los vehículos.
+
+- **Funcionario de ARBA**
+Un fallo en el cálculo de los valores fiscales de bienes puede ocacionar un error de revalorización ocacionando pérdidas importantes de recaudación de la provincia.
+
+- **Consejo Directivo de una facultad**
+Una pérdida de datos relacionados con la historia académica de los alumnos.
 
 #### 3. ¿Qué tipo de abusos computacionales conoce? ¿Cuáles son las consecuencias de estos abusos?
 
@@ -123,12 +128,7 @@ Para administrar la complejidad se sugiere:
 1) **Factorizar** el sistema en subsistemas
 2) **Determinar la confiabilidad de cada subsistema**, y las implicancias de cada uno de ellos en el nivel de confiabilidad general del sistema.
 
-#####Factorización:
-
-Para realizar una auditoría se debe factorizar en subsistemas:
-- Funciones gerenciales
-- Funciones de aplicación
-
+##### Factorización:
 
 Un subsistema es un componente de un sistema que:
 1) Realiza ciertas funciones básicas necesarias para el sistema en general
@@ -152,6 +152,12 @@ Además de las funciones, existen otras dos guías:
 - **Cohesión:**
     - Cada subsistema debe ser internamente cohesivo.
     - Todas las actividades realizadas por el sistema apuntan a cumplir la función principal del subsistema.
+
+###### Formas de factorización
+
+Para realizar una auditoría se debe factorizar en subsistemas:
+- Funciones gerenciales
+- Funciones de aplicación
 
 #### 13. ¿De qué manera se mide la confiabilidad de los controles?
 
@@ -241,7 +247,7 @@ Se usan los siguientes procedimientos para recolectar evidencia
 
 2) Testeo de controles
 3) Testeos substantivos de detalle de transacciones
-4) Testeos substantivos de:
+4) Testeos substantivos de: (resultados gerenciales o balances contables)
     4.1) Balances Contables (Para el caso de determinar pérdidas materiales o información financiera errónea)
     4.2) de resultados generales. (Para determinar eficiencia y eficacia de las operaciones. Ej.: testeos de performance.)
 
@@ -267,6 +273,22 @@ Las tareas que se realizan en la etapa de planificación varían dependiendo si 
     6) Identificar áreas de riesgo
 
 _Los auditores externos se preocupan por el tamao de los errores en los estados financieros._
+
+##### Tareas de planificación
+ 
+1) Determinar el alcance de la auditoría
+2) Emitir una opinión sobre el RDA.
+3) Emitir una opinión sobre el RI.
+4) Emitir una opinión sobre el RC.
+5) Calcular el RD que se debe lograr para cumplir con el RDA,
+6) Recolectar evidencia
+7) Documentar evidencia
+
+RDA: Riesgo deseado de auditoría
+RI: Riesgo Inherente
+RC: Riesgo de control
+RD: Riesgo de detección
+
 
 #### 19. Describa el contenido de un informe de auditoría.
 
